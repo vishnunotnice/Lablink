@@ -1,0 +1,10 @@
+{
+  "hub_lan_ip": "192.168.1.26",
+  "overlay_subnet": "10.1.2.0/24",
+  "nodes": [
+    {"name": "windows", "role": "server", "ip": "10.1.2.10", "port": 3389},
+    {"name": "ubuntu", "role": "hub", "ip": "10.1.2.11", "port": 22},
+    {"name": "fedora", "role": "server", "ip": "10.1.2.12", "port": 22},
+    {"name": "kali", "role": "attacker", "ip": "10.1.2.13", "port": 22}
+  ]
+}

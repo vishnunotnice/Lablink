@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "lablink"
+version = "0.2.0"
+description = "WireGuard cybersecurity lab management"
+requires-python = ">=3.10"
+authors = [{name = "Vishnu Moguluri"}]
+dependencies = ["PyYAML>=6,<7"]
+[project.optional-dependencies]
+test = ["pytest>=7"]
+[project.scripts]
+lablink = "lablink.cli:main"
+lanlink = "lablink.cli:main"
+homelab = "lablink.cli:main"
+[tool.setuptools.package-data]
+lablink = ["templates/*.yaml"]
